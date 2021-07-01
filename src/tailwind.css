@@ -2,7 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .navText {
-    @apply text-lg text-blue-600 font-bold;
+    @apply text-2xl font-bold animate-bounce;
+    @apply hover:text-green-400;
+}
+
+.cardbox {
+    @apply mx-auto p-5 shadow-md flex-col w-1/2 mt-6 rounded-md;
+}
+
+.h100 {
+    height: 95vh;
+}
+
+.gSize {
+    grid-template-columns: auto 1fr;
+}
+
+body {
+    @apply p-14;
+    @apply bg-gradient-to-br from-green-200 to-blue-200;
 }
