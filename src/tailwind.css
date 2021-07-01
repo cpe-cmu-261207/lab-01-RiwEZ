@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.navText {
+    @apply text-lg text-blue-600 font-bold;
+}
