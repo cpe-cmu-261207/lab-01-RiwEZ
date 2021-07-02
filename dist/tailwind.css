@@ -32220,17 +32220,43 @@ video {
   content: none;
 }
 
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.nav {
+  position: sticky;
+  top: 0px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  --tw-bg-opacity: 1;
+  background-color: rgba(17, 24, 39, var(--tw-bg-opacity));
+  padding: 1.25rem;
+}
+
 .navText {
-  -webkit-animation: bounce 1s infinite;
-          animation: bounce 1s infinite;
+  align-self: center;
   font-size: 1.5rem;
   line-height: 2rem;
-  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgba(243, 244, 246, var(--tw-text-opacity));
 }
 
 .navText:hover {
   --tw-text-opacity: 1;
   color: rgba(52, 211, 153, var(--tw-text-opacity));
+}
+
+.maincard {
+  margin-left: 3.5rem;
+  margin-right: 3.5rem;
+  margin-top: -1.25rem;
+  border-bottom-right-radius: 0.75rem;
+  border-bottom-left-radius: 0.75rem;
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  padding: 2.5rem;
+  height: 95vh;
 }
 
 .cardbox {
@@ -32254,7 +32280,8 @@ video {
 }
 
 body {
-  padding: 3.5rem;
+  padding-top: 0px;
+  padding-bottom: 3.5rem;
   background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
   --tw-gradient-from: #a7f3d0;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(167, 243, 208, 0));

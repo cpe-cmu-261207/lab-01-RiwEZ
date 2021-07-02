@@ -6,15 +6,26 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Tanat</title>
         <link href="../dist/tailwind.css" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap"
+            rel="stylesheet"
+        />
     </head>
     <body>
-        <div class="bg-white p-10 rounded-xl h100">
-            <div class="flex space-x-24 text-center justify-center mt-5">
-                <h1 class="navText"><a href="./index.html">Home</a></h1>
-                <h1 class="navText"><a href="./exp.html">Experience</a></h1>
+        <div class="nav">
+            <h1 class="text-white text-4xl ml-5 self-center">Tanat</h1>
+            <div class="justify-self-end flex mr-12">
+                <h1 class="navText mr-7"><a href="./index.html">Home</a></h1>
+                <h1 class="navText mr-5">
+                    <a href="./exp.html">Experiences</a>
+                </h1>
                 <h1 class="navText"><a href="./contact.html">Contact</a></h1>
             </div>
+        </div>
 
+        <div class="maincard">
             <div class="flex justify-center mt-12">
                 <img src="pic.png" alt="" width="12.5%" class="" />
                 <div class="p-5 w-1/2">
@@ -57,13 +68,9 @@
                 </div>
             </div>
 
-            <div class="text-gray-500 text-center text-md mt-12">Created by me © Tanat Tangun</div>
+            <div class="text-gray-500 text-center text-md mt-12">
+                Created by me © Tanat Tangun
+            </div>
         </div>
     </body>
-
-    <style>
-        * {
-            font-family: "Open Sans", sans-serif;
-        }
-    </style>
 </html>
