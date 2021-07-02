@@ -32286,33 +32286,33 @@ video {
   height: 100vh;
 }
 
-@-webkit-keyframes slide-up {
+@-webkit-keyframes slide-down {
   from {
     opacity: 0.25;
-    line-height: 1.5;
+    transform: translate(0, -2rem)
   }
 
   to {
     opacity: 1;
-    line-height: 1;
+    transform: translate(0, 0)
   }
 }
 
-@keyframes slide-up {
+@keyframes slide-down {
   from {
     opacity: 0.25;
-    line-height: 1.5;
+    transform: translate(0, -2rem)
   }
 
   to {
     opacity: 1;
-    line-height: 1;
+    transform: translate(0, 0)
   }
 }
 
-.slide-up {
-  -webkit-animation: slide-up 1s;
-          animation: slide-up 1s;
+.slide-down {
+  -webkit-animation: slide-down 1s;
+          animation: slide-down 1s;
 }
 
 @media (min-width: 640px) {
