@@ -32221,7 +32221,7 @@ video {
 }
 
 * {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .nav {
@@ -32244,7 +32244,7 @@ video {
 
 .navText:hover {
   --tw-text-opacity: 1;
-  color: rgba(52, 211, 153, var(--tw-text-opacity));
+  color: rgba(96, 165, 250, var(--tw-text-opacity));
 }
 
 .maincard {
@@ -32256,7 +32256,6 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
   padding: 2.5rem;
-  height: 95vh;
 }
 
 .cardbox {
@@ -32271,21 +32270,49 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.h100 {
-  height: 95vh;
+.bigtext {
+  font-size: 20rem;
 }
 
 .gSize {
   grid-template-columns: auto 1fr;
 }
 
-body {
-  padding-top: 0px;
-  padding-bottom: 3.5rem;
-  background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
-  --tw-gradient-from: #a7f3d0;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(167, 243, 208, 0));
-  --tw-gradient-to: #bfdbfe;
+.bg {
+  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+  --tw-gradient-from: #111827;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(17, 24, 39, 0));
+  --tw-gradient-to: #1e3a8a;
+  height: 100vh;
+}
+
+@-webkit-keyframes slide-up {
+  from {
+    opacity: 0.25;
+    line-height: 1.5;
+  }
+
+  to {
+    opacity: 1;
+    line-height: 1;
+  }
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0.25;
+    line-height: 1.5;
+  }
+
+  to {
+    opacity: 1;
+    line-height: 1;
+  }
+}
+
+.slide-up {
+  -webkit-animation: slide-up 1s;
+          animation: slide-up 1s;
 }
 
 @media (min-width: 640px) {

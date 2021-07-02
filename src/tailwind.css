@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 * {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 .nav {
@@ -12,26 +12,41 @@
 
 .navText {
     @apply text-2xl text-gray-100 self-center;
-    @apply hover:text-green-400;
+    @apply hover:text-blue-400;
 }
 
 .maincard {
-    @apply bg-white p-10 rounded-b-xl -mt-5 h100 mx-14;
+    @apply bg-white p-10 rounded-b-xl -mt-5 mx-14;
 }
 
 .cardbox {
     @apply mx-auto p-5 shadow-md flex-col w-1/2 mt-6 rounded-md;
 }
 
-.h100 {
-    height: 95vh;
+.bigtext {
+    font-size: 20rem;
 }
 
 .gSize {
     grid-template-columns: auto 1fr;
 }
 
-body {
-    @apply pt-0 pb-14;
-    @apply bg-gradient-to-br from-green-200 to-blue-200;
+.bg {
+    @apply bg-gradient-to-b from-gray-900 to-blue-900;
+    height: 100vh;
+}
+
+@keyframes slide-up {
+    from {
+        opacity: 0.25;
+        line-height: 1.5;
+    }
+    to {
+        opacity: 1;
+        line-height: 1;
+    }
+}
+
+.slide-up {
+    animation: slide-up 1s;
 }
