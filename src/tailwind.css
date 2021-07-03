@@ -15,20 +15,12 @@
     @apply hover:text-blue-400;
 }
 
-.maincard {
-    @apply bg-white p-10 rounded-b-xl -mt-5 mx-14;
-}
-
-.cardbox {
-    @apply mx-auto p-5 shadow-md flex-col w-1/2 mt-6 rounded-md;
-}
-
 .bigtext {
     font-size: 20rem;
 }
 
-.gSize {
-    grid-template-columns: auto 1fr;
+.work-text {
+    @apply text-right text-gray-100 text-5xl;
 }
 
 .bg {
@@ -39,14 +31,15 @@
 @keyframes slide-down {
     from {
         opacity: 0.25;
-        transform: translate(0, -2rem)
+        transform: translate(0, -2rem);
     }
     to {
         opacity: 1;
-        transform: translate(0, 0)
+        transform: translate(0, 0);
     }
 }
 
 .slide-down {
     animation: slide-down 1s;
 }
+
